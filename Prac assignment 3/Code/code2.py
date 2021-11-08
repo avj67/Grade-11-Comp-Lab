@@ -1,4 +1,4 @@
-# min no. of notes
+
 count=0
 amt=int(input("Amount: "))
 
