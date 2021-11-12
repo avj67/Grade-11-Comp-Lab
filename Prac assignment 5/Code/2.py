@@ -19,7 +19,7 @@ for j in range (n):
         temp //= 10
     if num == sum:
         count+=1
-        print(num, end=' ')
+        print(num, end=', ')
 if count == 0:
         print("none found")
 
