@@ -4,7 +4,6 @@ n = int(input("Enter a number:"))
 outer_li = [] 
 row = 0 
 inner_li = [] 
-i = 0 
 
 for i in range (n): 
     j = i 
