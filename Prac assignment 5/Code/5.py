@@ -1,6 +1,6 @@
 # print pattern
 
-n = int(input("Enter a number:")) 
+n = int(input("Enter a number: ")) 
 outer_li = [] 
 row = 0 
 inner_li = [] 

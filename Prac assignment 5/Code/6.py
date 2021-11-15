@@ -1,7 +1,7 @@
 # menu driven python code
 
-master_li = [[1,'Ajay'],[2,"Rohit"],[3,'Suresh'],[4,'Mukesh'],[5,'Anish'],[6,'Karthik'],[7,'Sunil'],[8,'Manish'],[9,'Hemali'], [10, 'Tiara']]
-reward_li=[1,1,2,3,4,2,5,1,5,9,7,6] # dummy data...can be edited
+master_li = []
+reward_li=[] # dummy data...can be edited
 count = 0
 restart = "y"
 
@@ -10,7 +10,7 @@ def addReward():
     rew_choice = int(input("Enter roll no.: "))
     reward_li.append(rew_choice)
 
-# when option 2 selected
+# when option 3 selected
 def report():
     print(
 '''
@@ -30,15 +30,16 @@ print(
 =======================================
 #               WELCOME               #
 #               *******               #
-#    (1) Add value to rewards list    #
-#    (2) See Report                   #
+#    (1) Reward a student             #
+#    (2) Add a new student            #
+#    (3) See Report                   #
 =======================================
 '''
 )
 
 # runs till user is done
 while restart == "y":
-    choice = int(input("Pick option (1)/(2): "))
+    choice = int(input("Pick option (1) or (2) or (3): "))
 
     if choice == 1:
         addReward()
@@ -46,13 +47,22 @@ while restart == "y":
         print()
 
     elif choice == 2:
+        name = input("Enter name: ")
+        count += 1
+        newStudent_li = [count,name]
+        master_li.append(newStudent_li)
+        restart = input("Restart (y/n): ")
+
+    elif choice == 3:
         report()
         restart = input("Restart (y/n): ")
-        print()
         
     else:
         print("Invalid option")
 
 # when user is done
 else:
-    print("GoodBye!")
+    print('''
+------------------------------------------
+                GoodBye!
+''')

@@ -18,3 +18,4 @@ else:
     del longest[-1]
 
 print(tuple(longest))
+
