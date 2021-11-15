@@ -17,4 +17,4 @@ while n != -1:
 else:
     del longest[-1]
 
-print(longest)
+print(tuple(longest))
