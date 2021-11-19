@@ -2,10 +2,12 @@
 
 longest = []
 current = []
+nums_li = []
 n = None
 
 while n != -1:
     n = int(input("Enter num: "))
+    nums_li.append(n)
 
     if current and current[-1] % 2 == 1:
         current.append(n)
@@ -17,5 +19,7 @@ while n != -1:
 else:
     del longest[-1]
 
+nums_tup = tuple(nums_li)
+print(nums_tup)
 print(tuple(longest))
 
