@@ -59,9 +59,9 @@ def minAndMax():
 
 choice = input(
 '''
-a) Search for an item and if available, display item name, stock and price per unit.
-b) Rename an item in the same dictionary.
-c) Display the item with minimum and maximum price per unit
+a) Search for an item.
+b) Rename an item.
+c) Display the item with minimum and maximum price per unit.
 
 Choice: ''')
 
